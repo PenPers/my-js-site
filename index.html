@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>Penpers - ورود</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- صفحه ورود -->
+  <div id="login-page">
+    <h1 class="logo">🌟 Penpers 🌟</h1>
+    <div class="login-box">
+      <h2>ورود به سایت</h2>
+      <input type="text" id="username" placeholder="نام کاربری">
+      <input type="password" id="password" placeholder="رمز عبور">
+      <button onclick="login()">ورود</button>
+    </div>
+  </div>
+
+  <!-- صفحه اصلی سایت -->
+  <div id="main-page" style="display: none;">
+    <header>
+      <h1>به Penpers خوش آمدید 🎉</h1>
+    </header>
+
+    <section class="welcome">
+      <p>این سایت ساخته شده تا تجربه‌ای جادویی داشته باشید ✨  
+         اینجا می‌تونید نظرتون رو ثبت کنید و حتی با عروسک انیمیشنی ما بازی کنید!</p>
+    </section>
+
+    <!-- باکس پیام به ایمیل -->
+    <section class="email-box">
+      <h2>📩 پیام به Penpers</h2>
+      <form>
+        <input type="text" placeholder="نام شما">
+        <textarea placeholder="پیام شما به ایمیل penpers (mohamadmahdi13895@gmail.com)"></textarea>
+        <button type="submit">ارسال پیام</button>
+      </form>
+    </section>
+
+    <!-- بخش نظرات -->
+    <section class="comments-box">
+      <h2>💬 نظرات شما</h2>
+      <input type="text" id="nameInput" placeholder="اسم شما">
+      <textarea id="commentInput" placeholder="نظر شما"></textarea>
+      <button onclick="addComment()">ارسال نظر</button>
+      <div id="comments-list"></div>
+    </section>
+
+    <!-- عروسک انیمیشنی -->
+    <section class="doll-box">
+      <h2>🤖 عروسک Penpers</h2>
+      <img id="doll" src="https://i.postimg.cc/3wQY3mzv/cute-doll.png" alt="doll">
+      <p>روی من کلیک کن تا برات برقصم 🎶</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
