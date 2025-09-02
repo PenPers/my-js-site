@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: 'Tahoma', sans-serif;
+  background: linear-gradient(135deg, #87cefa, #1e90ff);
+  color: #fff;
+  text-align: center;
+}
+
+.logo {
+  font-size: 3rem;
+  margin: 20px 0;
+  font-family: "Brush Script MT", cursive;
+}
+
+.login-box {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.login-box input {
+  display: block;
+  width: 250px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.login-box button {
+  padding: 10px 20px;
+  background: #ff4500;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+header {
+  background: rgba(0,0,0,0.3);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+section {
+  margin: 30px;
+  padding: 20px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+}
+
+.email-box textarea,
+.comments-box textarea {
+  width: 80%;
+  height: 80px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+}
+
+.email-box input,
+.comments-box input {
+  width: 60%;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+}
+
+button {
+  transition: transform 0.2s;
+}
+button:hover {
+  transform: scale(1.1);
+}
+
+#doll {
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+#doll.dancing {
+  animation: dance 0.5s infinite alternate;
+}
+@keyframes dance {
+  from { transform: rotate(-10deg); }
+  to { transform: rotate(10deg); }
+}
